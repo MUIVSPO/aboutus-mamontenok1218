@@ -1,0 +1,77 @@
+/* Основной стиль для страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f0ff; /* Светлый голубой фон */
+    color: #003366; /* Тёмно-синий текст */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Стиль для формы */
+form {
+    background-color: #ffffff; /* Белый фон для формы */
+    border: 2px solid #0056b3; /* Синяя рамка */
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Заголовок формы */
+form h2 {
+    text-align: center;
+    color: #0056b3; /* Насыщенный синий цвет текста */
+    margin-bottom: 20px;
+}
+
+/* Метки для полей */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #003366; /* Тёмно-синий текст */
+}
+
+/* Поля ввода */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #0056b3; /* Синяя рамка */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Кнопка отправки */
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3; /* Насыщенный синий фон */
+    color: #ffffff; /* Белый текст */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Эффект при наведении на кнопку */
+form button:hover {
+    background-color: #003366; /* Более тёмный синий */
+}
+
+/* Адаптивный дизайн для небольших экранов */
+@media (max-width: 400px) {
+    form {
+        width: 90%;
+    }
+}
+
+.auth-links p {
+text-align: center;
+}
